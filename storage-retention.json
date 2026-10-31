@@ -1,0 +1,22 @@
+{
+  "keep": {
+    "commands.mjs": "Public source, tests, required assets or licenses.",
+    "index.html": "Public source, tests, required assets or licenses.",
+    "sdk-clipboard-source.json": "Public source, tests, required assets or licenses.",
+    "LICENSE": "Public source, tests, required assets or licenses.",
+    "ink-ui": "Public source, tests, required assets or licenses.",
+    "live-query.mjs": "Public source, tests, required assets or licenses.",
+    "desktop-keys.mjs": "Public source, tests, required assets or licenses.",
+    "icon.svg": "Public source, tests, required assets or licenses.",
+    "sdk.js": "Public source, tests, required assets or licenses.",
+    "ink-app.json": "Public source, tests, required assets or licenses.",
+    "README.md": "Public source, tests, required assets or licenses.",
+    "editor.js": "Public source, tests, required assets or licenses.",
+    "text-diff.mjs": "Public source, tests, required assets or licenses.",
+    ".gitignore": "Public source, tests, required assets or licenses.",
+    "package.json": "Public source, tests, required assets or licenses.",
+    "style.css": "Public source, tests, required assets or licenses.",
+    ".gitleaks.toml": "Secret scanner configuration with narrowly scoped source-checksum exceptions."
+  },
+  "safe_to_remove": {}
+}

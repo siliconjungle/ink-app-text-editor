@@ -1,0 +1,126 @@
+{
+  "slug": "text-editor",
+  "title": "Text Editor",
+  "repository": "https://github.com/siliconjungle/ink-app-text-editor",
+  "entry": "index.html",
+  "desktop": {
+    "entry": "text-editor",
+    "icon": {
+      "svg": "icon.svg"
+    },
+    "fileTypes": [
+      "text/*",
+      "application/json",
+      "application/javascript",
+      "application/xml",
+      ".txt",
+      ".md",
+      ".json",
+      ".js",
+      ".ts",
+      ".css",
+      ".html",
+      ".csv",
+      ".ink",
+      ".log",
+      ".yaml",
+      ".yml"
+    ],
+    "dropTypes": [
+      "text/*",
+      "application/json",
+      "application/javascript",
+      "application/xml",
+      ".txt",
+      ".md",
+      ".json",
+      ".js",
+      ".ts",
+      ".css",
+      ".html",
+      ".csv",
+      ".ink",
+      ".log",
+      ".yaml",
+      ".yml"
+    ],
+    "window": {
+      "width": 820,
+      "height": 570
+    }
+  },
+  "capabilities": [
+    "world.read",
+    "world.write",
+    "desktop.open"
+  ],
+  "commands": [
+    {
+      "id": "new",
+      "title": "New text document",
+      "description": "Start a new document.",
+      "inputs": [],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "find",
+      "title": "Find in document",
+      "description": "Find text in the open document.",
+      "inputs": [
+        {
+          "name": "query",
+          "label": "Find text",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "files",
+      "title": "Show text files",
+      "description": "Browse or search show text files.",
+      "inputs": [
+        {
+          "name": "q",
+          "label": "Search",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "offset",
+          "label": "Offset",
+          "type": "number",
+          "required": false,
+          "default": 0
+        },
+        {
+          "name": "limit",
+          "label": "Results per page",
+          "type": "number",
+          "required": false,
+          "default": 30
+        }
+      ],
+      "handler": {
+        "type": "query",
+        "query": {
+          "kind": "file",
+          "fileTypes": [
+            "*"
+          ]
+        }
+      },
+      "result": {
+        "items": "objects",
+        "title": "title",
+        "subtitle": "kind"
+      }
+    }
+  ],
+  "commandsClient": "commands.mjs"
+}

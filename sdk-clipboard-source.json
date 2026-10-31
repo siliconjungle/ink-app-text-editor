@@ -1,0 +1,8 @@
+{
+  "sdkCommit": "03b8a55c0ba4e8b570e479ab1db4e7bcbd95fc09",
+  "files": {
+    "sdk.js": "55277d116721967a679d97f04983bf8e623d70ca6784912ec90a45e9d70f28c8",
+    "desktop-keys.mjs": "aacb9ade0a6eb7ecb9382b25d6bf60850967ac91f077418d4f556b4d39858360",
+    "live-query.mjs": "bff9ae3322c41de933ae6e466b3189909aaf4e455a82b4056f03e5c9ab16c88a"
+  }
+}
