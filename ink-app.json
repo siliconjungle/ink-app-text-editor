@@ -47,6 +47,26 @@
     "window": {
       "width": 820,
       "height": 570
+    },
+    "preview": {
+      "fileTypes": [
+        "text/*",
+        "application/json",
+        "application/javascript",
+        "application/xml",
+        ".txt",
+        ".md",
+        ".json",
+        ".js",
+        ".ts",
+        ".css",
+        ".html",
+        ".csv",
+        ".ink",
+        ".log",
+        ".yaml",
+        ".yml"
+      ]
     }
   },
   "capabilities": [
